@@ -10,16 +10,76 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /*padding: 20px;*/
-    /*border: black 1px solid;*/
-
 
 }
 
-.container {
-    width: 550px;
-    height: 750px;
+.box {
+    width: 500px;
+    height: 800px;
     background-color: coral;
+    padding: 20px;
 
 }
 
+.form {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: auto;
+
+}
+
+.formLabel {
+    margin: 10px;
+
+}
+
+.formInput {
+    width: 200px;
+    left: 30px;
+    margin: 10px;
+}
+
+.formDropDownLabel {
+    width: 20px;
+    margin: 10px;
+
+
+}
+
+.formDropDown {
+    width: 10px;
+    margin: 10px;
+
+}
+
+.delivTimeRadio {
+    margin: 10px;
+}
+
+.delivTimeRadioLabel {
+    margin: 10px;
+
+}
+
+.commentLabel {
+    margin: 10px;
+}
+
+.comment {
+    resize: none;
+    margin: 10px;
+
+}
+
+.agreeLabel {
+    margin: 10px;
+}
+
+.agreeCheckbox {
+    margin: 10px;
+}
+
+.submitBtn {
+
+}
