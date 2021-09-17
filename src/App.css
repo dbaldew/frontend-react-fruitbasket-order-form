@@ -1,0 +1,25 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*padding: 20px;*/
+    /*border: black 1px solid;*/
+
+
+}
+
+.container {
+    width: 550px;
+    height: 750px;
+    background-color: coral;
+
+}
+
