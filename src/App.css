@@ -1,11 +1,17 @@
+
 * {
     padding: 0px;
     margin: 0px;
 }
 
 body {
+
+}
+
+.flex-container {
     width: 100vw;
     height: 100vh;
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -13,24 +19,75 @@ body {
 
 }
 
-.box {
+.box1 {
+    background-color: #ffffff;
+    border: cornflowerblue 3px solid;
     width: 500px;
-    height: 800px;
-    background-color: coral;
-    padding: 20px;
+    height: 600px;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: Cambria;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #0059ff;
+
+
+}
+.box2 {
+    background-color: #ffffff;
+    border: cornflowerblue 3px solid;
+    width: 500px;
+    height: 600px;
+    padding: 5px;
+    margin: 10px;
+    font-family: Cambria;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #0059ff;
+
 
 }
 
-.form {
+.fruitBar {
     font-size: 20px;
+    border: cornflowerblue 3px solid;
+    padding: 15px;
+    margin: 5px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.fruitBarReset {
+    font-size: 20px;
+    border: cornflowerblue 3px solid;
+    padding: 15px;
+    margin: 5px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.form {
+
+    /*border: cornflowerblue 3px solid;*/
+    padding: 20px;
+    margin: 5px;
     display: flex;
     flex-direction: column;
-    justify-items: auto;
+
 
 }
 
 .formLabel {
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 50px;
 
 }
 
@@ -38,23 +95,28 @@ body {
     width: 200px;
     left: 30px;
     margin: 10px;
+
 }
 
 .formDropDownLabel {
     width: 20px;
-    margin: 10px;
-
+    margin: 20px;
 
 }
 
 .formDropDown {
     width: 10px;
-    margin: 10px;
+    margin: 20px;
 
+}
+
+.containerDelivBtn {
+    display: flex;
 }
 
 .delivTimeRadio {
     margin: 10px;
+
 }
 
 .delivTimeRadioLabel {
@@ -63,7 +125,9 @@ body {
 }
 
 .commentLabel {
-    margin: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+
 }
 
 .comment {
@@ -77,9 +141,15 @@ body {
 }
 
 .agreeCheckbox {
-    margin: 10px;
+    margin-right: 10px;
 }
 
 .submitBtn {
+    font-family: Cambria;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #0059ff;
+    padding: 10px;
+    margin: 20px;
 
 }
