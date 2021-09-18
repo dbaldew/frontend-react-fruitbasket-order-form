@@ -21,24 +21,24 @@ body {
 
 .box1 {
     background-color: #ffffff;
-    border: cornflowerblue 3px solid;
+    border: #0059ff 3px solid;
     width: 500px;
     height: 600px;
     padding: 5px;
     margin: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-family: Cambria;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 30px;
     color: #0059ff;
 
 
 }
 .box2 {
     background-color: #ffffff;
-    border: cornflowerblue 3px solid;
+    border: #0059ff 3px solid;
     width: 500px;
     height: 600px;
     padding: 5px;
@@ -47,31 +47,82 @@ body {
     font-weight: bolder;
     font-size: 20px;
     color: #0059ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
 
 }
 
 .fruitBar {
-    font-size: 20px;
-    border: cornflowerblue 3px solid;
+
+    border: #0059ff 3px solid;
     padding: 15px;
     margin: 5px;
     height: 40px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:flex-end;
+    align-items: center;
 
 }
 
 .fruitBarReset {
-    font-size: 20px;
-    border: cornflowerblue 3px solid;
-    padding: 15px;
-    margin: 5px;
+
+    border: #0059ff 3px solid;
+
     height: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Cambria;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #0059ff;
+
 
 }
+
+.counterContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 30px;
+    margin: 5px;
+
+}
+
+.counterBtn {
+
+    border: #0059ff 3px solid;
+    color: #0059FFFF;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fruitCountNr{
+    border: #ffffff 3px solid;
+    color: #0059FFFF;
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 
 
 .form {
@@ -133,7 +184,11 @@ body {
 .comment {
     resize: none;
     margin: 10px;
+    border-color: #0059FFFF;
 
+}
+.comment:active {
+    border-color: #0059FFFF;
 }
 
 .agreeLabel {
@@ -144,12 +199,25 @@ body {
     margin-right: 10px;
 }
 
-.submitBtn {
+.stdBtn {
     font-family: Cambria;
     font-weight: bolder;
     font-size: 20px;
     color: #0059ff;
     padding: 10px;
     margin: 20px;
+    width: 400px;
 
+}
+
+.reset {
+    font-family: Cambria;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #0059ff;
+    padding: 10px;
+    margin: 20px;
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
 }
