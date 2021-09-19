@@ -106,14 +106,15 @@ body {
 
 }
 
-.fruitCountNr{
+.fruitCount{
     border: #ffffff 3px solid;
     color: #0059FFFF;
     width: 30px;
     height: 30px;
-    margin: 20px;
+    margin: 10px;
+
     background-color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
     display: flex;

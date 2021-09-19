@@ -18,6 +18,7 @@ function Form() {
                 name = "Postcode"
             />
 
+
             {/*freq*/}
             <label className="formDropDownLabel"
                    htmlFor="delivFreq">Bezorgfrequentie

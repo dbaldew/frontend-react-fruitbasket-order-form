@@ -2,8 +2,14 @@ import React from 'react';
 import './App.css';
 import Fruitbar from "./Components/Fruitbar";
 import Form from "./Components/Form";
+import Reset from "./Components/Reset";
+
 
 function App() {
+
+
+
+
     return (
         <>
             <div className="flex-container">
@@ -20,13 +26,7 @@ function App() {
                     <Fruitbar
                         fruitName="🥝 Kiwi's"
                     />
-                    <label htmlFor="stdBtn">
-                        <button className= "reset"
-                                type="reset"
-                                name="submitBtn">Reset
-                        </button>
-                    </label>
-
+                    <Reset/>
 
                 </div>
                 <div className="box2">
