@@ -1,14 +1,11 @@
 import React from 'react';
 import './App.css';
 import Fruitbar from "./Components/Fruitbar";
-import Form from "./Components/Form";
+import Info from "./Components/Info";
 import Reset from "./Components/Reset";
 
 
 function App() {
-
-
-
 
     return (
         <>
@@ -30,7 +27,7 @@ function App() {
 
                 </div>
                 <div className="box2">
-                    <Form/>
+                    <Info/>
                 </div>
             </div>
         </>

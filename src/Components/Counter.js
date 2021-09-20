@@ -23,6 +23,7 @@ function Counter () {
                     type="text"
                     id="fruitCount"
                     name="fruitCount"
+                    readOnly={true}
                     value={fruitCount}
                 />
             </label>

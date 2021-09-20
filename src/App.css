@@ -166,12 +166,12 @@ body {
     display: flex;
 }
 
-.delivTimeRadio {
+.delivTime {
     margin: 10px;
 
 }
 
-.delivTimeRadioLabel {
+.delivTimeLabel {
     margin: 10px;
 
 }
