@@ -1,4 +1,3 @@
-
 * {
     padding: 0px;
     margin: 0px;
@@ -51,10 +50,8 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
 
-
 }
-
-.fruitBar {
+.fruitbar {
 
     border: #0059ff 3px solid;
     padding: 15px;
@@ -65,23 +62,6 @@ body {
     align-items: center;
 
 }
-
-.fruitBarReset {
-
-    border: #0059ff 3px solid;
-
-    height: 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: Cambria;
-    font-weight: bolder;
-    font-size: 20px;
-    color: #0059ff;
-
-
-}
-
 .counterContainer{
     display: flex;
     justify-content: space-evenly;
@@ -122,10 +102,6 @@ body {
     align-items: center;
 
 }
-
-
-
-
 .form {
 
     /*border: cornflowerblue 3px solid;*/
@@ -138,67 +114,18 @@ body {
 }
 
 .formLabel {
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 50px;
 
 }
 
-.formInput {
+.input {
     width: 200px;
     left: 30px;
     margin: 10px;
 
 }
 
-.formDropDownLabel {
-    width: 20px;
-    margin: 20px;
-
-}
-
-.formDropDown {
-    width: 10px;
-    margin: 20px;
-
-}
-
-.containerDelivBtn {
-    display: flex;
-}
-
-.delivTime {
-    margin: 10px;
-
-}
-
-.delivTimeLabel {
-    margin: 10px;
-
-}
-
-.commentLabel {
-    margin-left: 10px;
-    margin-top: 10px;
-
-}
-
-.comment {
-    resize: none;
-    margin: 10px;
-    border-color: #0059FFFF;
-
-}
-.comment:active {
-    border-color: #0059FFFF;
-}
-
-.agreeLabel {
-    margin: 10px;
-}
-
-.agreeCheckbox {
-    margin-right: 10px;
-}
 
 .stdBtn {
     font-family: Cambria;
@@ -210,7 +137,21 @@ body {
     width: 400px;
 
 }
+.fruitBarReset {
 
+    border: #0059ff 3px solid;
+
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Cambria;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #0059ff;
+
+
+}
 .reset {
     font-family: Cambria;
     font-weight: bolder;
@@ -222,3 +163,11 @@ body {
     display: flex;
     justify-content: space-around;
 }
+
+
+
+
+
+
+
+

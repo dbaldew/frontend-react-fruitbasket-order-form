@@ -1,8 +1,16 @@
 import React from "react";
 
-function Counter () {
+function Counter({fruitCount, setFruitCount}) {
 
-    const [fruitCount, setFruitCount] = React.useState (0);
+
+    function add() {
+        return setFruitCount(fruitCount + 1);
+    }
+
+    function sub() {
+        return fruitCount > 0 ? setFruitCount(fruitCount - 1) : (setFruitCount(0));
+    }
+
 
     return (
         <div className="counterContainer">
@@ -12,7 +20,7 @@ function Counter () {
                     type="button"
                     name="subtr"
                     id="subtr"
-                    onClick={(e) =>fruitCount>0?setFruitCount(fruitCount -1):(setFruitCount(0))}
+                    onClick={sub}
                 >-
                 </button>
             </label>
@@ -33,7 +41,7 @@ function Counter () {
                     type="button"
                     name="add"
                     id="add"
-                    onClick={(e) =>setFruitCount(fruitCount +1)}
+                    onClick={add}
                 >+
                 </button>
             </label>
