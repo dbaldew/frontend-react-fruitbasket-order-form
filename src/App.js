@@ -63,34 +63,42 @@ function App() {
                 </div>
                 <div className="box2">
                     <form className="form">
-                        <Info
-                            id="Voornaam"
-                            type="text"
-                            name="firstName"
-                            value={firstName}
-                            onChange={(e) => setFirstName(e.target.value)}
-                        />
-                        <Info
-                            id="Achternaam"
-                            type="text"
-                            name="lastName"
-                            value={lastName}
-                            onChange={(e) => setLastName(e.target.value)}
-                        />
-                        <Info
-                            id="Leeftijd"
-                            type="text"
-                            name="age"
-                            value={age}
-                            onChange={(e) => setAge(e.target.value)}
-                        />
-                        <Info
-                            id="Postcode"
-                            type="text"
-                            name="zip"
-                            value={zip}
-                            onChange={(e) => setZip(e.target.value)}
-                        />
+                        <label htmlFor="Voornaam">Voornaam
+                            <Info
+                                id="Voornaam"
+                                type="text"
+                                name="firstName"
+                                value={firstName}
+                                onChange={(e) => setFirstName(e.target.value)}
+                            />
+                        </label>
+                        <label htmlFor="Achternaam">Achternaam
+                            <Info
+                                id="Achternaam"
+                                type="text"
+                                name="lastName"
+                                value={lastName}
+                                onChange={(e) => setLastName(e.target.value)}
+                            />
+                        </label>
+                        <label htmlFor="Leeftijd" className="label">Leeftijd
+                            <Info
+                                id="Leeftijd"
+                                type="text"
+                                name="age"
+                                value={age}
+                                onChange={(e) => setAge(e.target.value)}
+                            />
+                        </label>
+                        <label htmlFor="Postcode">Postcode
+                            <Info
+                                id="Postcode"
+                                type="text"
+                                name="zip"
+                                value={zip}
+                                onChange={(e) => setZip(e.target.value)}
+                            />
+                        </label>
                         <label htmlFor="bezorgfreq">Bezorgfrequentie
                             <select name="bezorgfreq"
                                     id="bezorgfreq"
@@ -102,39 +110,50 @@ function App() {
                                 <option value="iedere maand">iedere maand</option>
                             </select>
                         </label>
-                        <Info
-                            id="Overdag"
-                            type="radio"
-                            name="delivTime"
-                            value={delivTime}
-                            onClick={(e)=> setDelivTime (e.target.value)}
-                            checked={true}
-                        />
-                        <Info
-                            id="'s Avonds"
-                            type="radio"
-                            name="delivTime"
-                            value={delivTime}
-                            onClick={(e)=> setDelivTime (e.target.value)}
-                        />
+                        <div className="delivtimecontainer">
+                            <label htmlFor="delivTime1">
+                                <Info
+                                    id="delivTime1"
+                                    type="radio"
+                                    name="delivTime"
+                                    checked={true}
+                                    value="Overdag"
+                                    onClick={(e)=> setDelivTime (e.target.value)}
+                                />Overdag
+                            </label>
+                            <label htmlFor="delivTime2">
+                                <Info
+                                    id="delivTime2"
+                                    type="radio"
+                                    name="delivTime"
+                                    value="'s Avonds"
+                                    onClick={(e)=> setDelivTime (e.target.value)}
+                                />'s Avonds
+                            </label>
+                        </div>
+                        <label htmlFor="comment" >Opmerkingen</label>
                         <textarea
+                            className="comment"
                             name="comment"
                             id="comment"
-                            cols="30" rows="10"
+                            cols="30" rows="6"
                             value={comment}
                             onChange={(e)=>setComment(e.target.value)}
                         >
                         </textarea>
-                        <Info
-                        id="terms"
-                        type = "checkbox"
-                        name="terms"
-                        value={terms}
-                        onClick={(e)=>setTerms(!terms)}
-                        />
+                        <label htmlFor="terms">
+                            <Info
+                                id="terms"
+                                type ="checkbox"
+                                name="terms"
+                                value={terms}
+                                onClick={(e)=>setTerms(!terms)}
+                            />Ik ga akkoord met de voorwaarden
+                        </label>
                     </form>
                     <button className="stdBtn"
                             type="submit"
+                            disabled={!terms}
                             onClick={handleClick}
                     >Verzenden
                     </button>
