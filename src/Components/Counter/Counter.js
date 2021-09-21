@@ -2,13 +2,12 @@ import React from "react";
 
 function Counter({fruitCount, setFruitCount}) {
 
-
     function add() {
-        return setFruitCount(fruitCount + 1);
+        setFruitCount(fruitCount + 1);
     }
 
     function sub() {
-        return fruitCount > 0 ? setFruitCount(fruitCount - 1) : (setFruitCount(0));
+        fruitCount > 0 ? setFruitCount(fruitCount - 1) : (setFruitCount(0));
     }
 
 

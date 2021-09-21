@@ -3,6 +3,7 @@ import './App.css';
 import Fruitbar from "./Components/Fruitbar/Fruitbar";
 import Info from "./Components/Info/Info";
 
+
 function App() {
     const [banaan, setBanaan] = React.useState(0);
     const [aardbei, setAardbei] = React.useState(0);
@@ -21,6 +22,13 @@ function App() {
         e.preventDefault();
         console.log({firstName}, {lastName},{age},{zip},{delivFreq},
             {delivTime}, {comment},{terms}, {banaan}, {aardbei}, {appel}, {kiwi})
+    }
+
+    function reset (){
+        setBanaan(0);
+        setAardbei(0);
+        setAppel(0);
+        setKiwi(0);
     }
 
     return (
@@ -47,6 +55,11 @@ function App() {
                         fruitCount={kiwi}
                         setFruitCount={setKiwi}
                     />
+                    <button className="stdBtn"
+                            type="Reset"
+                            onClick={reset}
+                    >Reset
+                    </button>
                 </div>
                 <div className="box2">
                     <form className="form">
@@ -120,7 +133,6 @@ function App() {
                         onClick={(e)=>setTerms(!terms)}
                         />
                     </form>
-
                     <button className="stdBtn"
                             type="submit"
                             onClick={handleClick}
