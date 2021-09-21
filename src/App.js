@@ -81,7 +81,7 @@ function App() {
                                 onChange={(e) => setLastName(e.target.value)}
                             />
                         </label>
-                        <label htmlFor="Leeftijd" className="label">Leeftijd
+                        <label htmlFor="Leeftijd">Leeftijd
                             <Info
                                 id="Leeftijd"
                                 type="text"
@@ -115,8 +115,8 @@ function App() {
                                 <Info
                                     id="delivTime1"
                                     type="radio"
+                                    defaultChecked={true}
                                     name="delivTime"
-                                    checked={true}
                                     value="Overdag"
                                     onClick={(e)=> setDelivTime (e.target.value)}
                                 />Overdag
@@ -136,7 +136,7 @@ function App() {
                             className="comment"
                             name="comment"
                             id="comment"
-                            cols="30" rows="6"
+                            cols="30" rows="5"
                             value={comment}
                             onChange={(e)=>setComment(e.target.value)}
                         >

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Info ({type, id, name,value,onChange,onClick, checked}) {
+function Info ({type, id, name,value,onChange,onClick, defaultChecked}) {
 
     return(
             <input
@@ -11,7 +11,7 @@ function Info ({type, id, name,value,onChange,onClick, checked}) {
                 value={value}
                 onChange={onChange}
                 onClick={onClick}
-                checked={checked}
+                defaultChecked={defaultChecked}
             />
     )
 }

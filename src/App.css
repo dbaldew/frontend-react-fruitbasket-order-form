@@ -3,10 +3,6 @@
     margin: 0px;
 }
 
-body {
-
-}
-
 .flex-container {
     width: 100vw;
     height: 100vh;
@@ -32,7 +28,6 @@ body {
     font-weight: bolder;
     font-size: 30px;
     color: #0059ff;
-
 
 }
 
@@ -116,32 +111,23 @@ body {
 
 }
 
-.label{
-
-}
-
 .input {
     margin: 10px;
     display: inline-block;
 
 }
 
-
 .delivtimecontainer{
     display: flex;
     flex-direction: row;
     margin: 20px;
 }
+
 .comment{
     resize: none;
     margin: 10px;
 
-
 }
-
-
-
-
 
 .stdBtn {
     font-family: Cambria;
@@ -153,4 +139,3 @@ body {
     width: 400px;
 
 }
-

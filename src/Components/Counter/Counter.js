@@ -2,14 +2,13 @@ import React from "react";
 
 function Counter({fruitCount, setFruitCount}) {
 
-    function add() {
-        setFruitCount(fruitCount + 1);
-    }
-
     function sub() {
         fruitCount > 0 ? setFruitCount(fruitCount - 1) : (setFruitCount(0));
     }
 
+    function add() {
+        setFruitCount(fruitCount + 1);
+    }
 
     return (
         <div className="counterContainer">
