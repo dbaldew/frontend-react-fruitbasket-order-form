@@ -3,7 +3,6 @@ import './App.css';
 import Fruitbar from "./Components/Fruitbar/Fruitbar";
 import Info from "./Components/Info/Info";
 
-
 function App() {
     const [banaan, setBanaan] = React.useState(0);
     const [aardbei, setAardbei] = React.useState(0);
@@ -154,9 +153,8 @@ function App() {
                         </label>
                     </form>
                     <div className="sendContainer">
-                        {total.valueOf() >0 && <p className="greet">Eet smakelijk!</p>}
-                        {total.valueOf()<1 && <p className="warn">Je hebt nog geen fruit gekozen!</p>}
-
+                        {total.valueOf() > 0 && <p className="greet">Eet smakelijk!</p>}
+                        {total.valueOf() < 1 && <p className="warn">Je hebt nog geen fruit gekozen!</p>}
                         <button className="stdBtn"
                                 type="submit"
                                 disabled={!terms}
