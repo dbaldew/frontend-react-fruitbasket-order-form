@@ -13,18 +13,20 @@ function App() {
     const [lastName, setLastName] = React.useState("")
     const [age, setAge] = React.useState("")
     const [zip, setZip] = React.useState("")
-    const [delivFreq, setDelivFreq] = React.useState ("Iedere week")
-    const [delivTime, setDelivTime] = React.useState ("Overdag")
+    const [delivFreq, setDelivFreq] = React.useState("Iedere week")
+    const [delivTime, setDelivTime] = React.useState("Overdag")
     const [comment, setComment] = React.useState("")
     const [terms, setTerms] = React.useState(false)
+    const total = appel.valueOf() + banaan.valueOf() + aardbei.valueOf() + kiwi.valueOf()
 
     function handleClick(e) {
         e.preventDefault();
-        console.log({firstName}, {lastName},{age},{zip},{delivFreq},
-            {delivTime}, {comment},{terms}, {banaan}, {aardbei}, {appel}, {kiwi})
+        console.log({firstName}, {lastName}, {age}, {zip}, {delivFreq},
+            {delivTime}, {comment}, {terms}, {banaan}, {aardbei}, {appel}, {kiwi}, total)
+
     }
 
-    function reset (){
+    function reset() {
         setBanaan(0);
         setAardbei(0);
         setAppel(0);
@@ -103,7 +105,7 @@ function App() {
                             <select name="bezorgfreq"
                                     id="bezorgfreq"
                                     value={delivFreq}
-                                    onChange={(e)=>setDelivFreq(e.target.value)}
+                                    onChange={(e) => setDelivFreq(e.target.value)}
                             >
                                 <option value="iedere week">Iedere week</option>
                                 <option value="om de week">Om de week</option>
@@ -118,7 +120,7 @@ function App() {
                                     defaultChecked={true}
                                     name="delivTime"
                                     value="Overdag"
-                                    onClick={(e)=> setDelivTime (e.target.value)}
+                                    onClick={(e) => setDelivTime(e.target.value)}
                                 />Overdag
                             </label>
                             <label htmlFor="delivTime2">
@@ -127,36 +129,40 @@ function App() {
                                     type="radio"
                                     name="delivTime"
                                     value="'s Avonds"
-                                    onClick={(e)=> setDelivTime (e.target.value)}
+                                    onClick={(e) => setDelivTime(e.target.value)}
                                 />'s Avonds
                             </label>
                         </div>
-                        <label htmlFor="comment" >Opmerkingen</label>
+                        <label htmlFor="comment">Opmerkingen</label>
                         <textarea
                             className="comment"
                             name="comment"
                             id="comment"
                             cols="30" rows="5"
                             value={comment}
-                            onChange={(e)=>setComment(e.target.value)}
+                            onChange={(e) => setComment(e.target.value)}
                         >
                         </textarea>
                         <label htmlFor="terms">
                             <Info
                                 id="terms"
-                                type ="checkbox"
+                                type="checkbox"
                                 name="terms"
                                 value={terms}
-                                onClick={(e)=>setTerms(!terms)}
+                                onClick={(e) => setTerms(!terms)}
                             />Ik ga akkoord met de voorwaarden
                         </label>
                     </form>
-                    <button className="stdBtn"
-                            type="submit"
-                            disabled={!terms}
-                            onClick={handleClick}
-                    >Verzenden
-                    </button>
+                    <div className="sendContainer">
+                        <p className="warn">Je hebt nog geen fruit gekozen!</p>
+                        <p className="greet">Eet smakelijk!</p>
+                        <button className="stdBtn"
+                                type="submit"
+                                disabled={!terms}
+                                onClick={handleClick}
+                        >Verzenden
+                        </button>
+                    </div>
                 </div>
             </div>
         </>
