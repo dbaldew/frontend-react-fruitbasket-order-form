@@ -9,15 +9,15 @@ function App() {
     const [aardbei, setAardbei] = React.useState(0);
     const [appel, setAppel] = React.useState(0);
     const [kiwi, setKiwi] = React.useState(0);
-    const [firstName, setFirstName] = React.useState("")
-    const [lastName, setLastName] = React.useState("")
-    const [age, setAge] = React.useState("")
-    const [zip, setZip] = React.useState("")
-    const [delivFreq, setDelivFreq] = React.useState("Iedere week")
-    const [delivTime, setDelivTime] = React.useState("Overdag")
-    const [comment, setComment] = React.useState("")
-    const [terms, setTerms] = React.useState(false)
-    const total = appel.valueOf() + banaan.valueOf() + aardbei.valueOf() + kiwi.valueOf()
+    const [firstName, setFirstName] = React.useState("");
+    const [lastName, setLastName] = React.useState("");
+    const [age, setAge] = React.useState("");
+    const [zip, setZip] = React.useState("");
+    const [delivFreq, setDelivFreq] = React.useState("Iedere week");
+    const [delivTime, setDelivTime] = React.useState("Overdag");
+    const [comment, setComment] = React.useState("");
+    const [terms, setTerms] = React.useState(false);
+    const total = appel.valueOf() + banaan.valueOf() + aardbei.valueOf() + kiwi.valueOf();
 
     function handleClick(e) {
         e.preventDefault();
@@ -154,8 +154,9 @@ function App() {
                         </label>
                     </form>
                     <div className="sendContainer">
-                        <p className="warn">Je hebt nog geen fruit gekozen!</p>
-                        <p className="greet">Eet smakelijk!</p>
+                        {total.valueOf() >0 && <p className="greet">Eet smakelijk!</p>}
+                        {total.valueOf()<1 && <p className="warn">Je hebt nog geen fruit gekozen!</p>}
+
                         <button className="stdBtn"
                                 type="submit"
                                 disabled={!terms}
